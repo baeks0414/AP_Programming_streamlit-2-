@@ -60,10 +60,10 @@ with st.sidebar:
 
 #    set_background_color(background)
 
-    # if background != "White":
-    #     option_menu_backcolor = "#fafafa"
-    # else:
-    #     option_menu_backcolor = "#000000"
+    if background != "White":
+        option_menu_backcolor = "#fafafa"
+    else:
+        option_menu_backcolor = "#000000"
 
 
     choose = option_menu("App Gallery", ["About", "word analyzer", "Project Planning", "Python e-Course", "Contact"],
