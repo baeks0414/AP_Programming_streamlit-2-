@@ -43,6 +43,7 @@ class BinaryTree:
 
         unique_words = set()        # unique_words = list()
         self._count_unique_words_recursive(self.root, unique_words)
+        print(unique_words)
         return len(unique_words)
     
 if __name__ == '__main__':
