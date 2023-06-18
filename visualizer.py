@@ -41,7 +41,7 @@ def most_common_words(words,N=3):  # 단어들 전처리 후 빈도수대로 추
 def plot_word_frequency_distribution(words):
     from matplotlib import font_manager, rc 
     font_path = "C:/Windows/Fonts/batang.ttc"
-    font = font_manager.FontProperties(fname=font_path).get_name()
+    font = font_manager.FontProperties().get_name()  # fontPath 오류떠서 지움
     rc('font', family=font)
 
     top_words, frequencies = most_common_words(words, N=10)
