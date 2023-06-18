@@ -30,6 +30,7 @@ st.set_page_config(
 
 
 # Sidebar
+'''
 def set_background_color(color):
     with open('.streamlit/config.toml','r') as f:
         data = load(f)
@@ -48,6 +49,7 @@ def set_background_color(color):
         dump(data,f)
     print(color,'함수')
     return
+'''
 
 with st.sidebar:
     background = st.radio(
@@ -56,12 +58,12 @@ with st.sidebar:
     )
     print(background,'변수이름')
 
-    set_background_color(background)
+#    set_background_color(background)
 
-    if background != "White":
-        option_menu_backcolor = "#fafafa"
-    else:
-        option_menu_backcolor = "#000000"
+    # if background != "White":
+    #     option_menu_backcolor = "#fafafa"
+    # else:
+    #     option_menu_backcolor = "#000000"
 
 
     choose = option_menu("App Gallery", ["About", "word analyzer", "Project Planning", "Python e-Course", "Contact"],
