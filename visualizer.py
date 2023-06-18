@@ -8,7 +8,7 @@ def most_common_words(words,N=3):  # 단어들 전처리 후 빈도수대로 추
     # 기호 삭제, '모양'='모양.' 이 되도록 기호들 삭제된 words
     cl_words = []
     for word in words:
-        word = word.strip(' .:,?!')
+        word = word.strip(' .:,?!~')
         if len(word) != 0:
             cl_words.append(word)
 
