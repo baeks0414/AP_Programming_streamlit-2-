@@ -1,0 +1,6 @@
+streamlit
+time
+tomlkit
+streamlit_option_menu
+matplotlib
+seaborn
