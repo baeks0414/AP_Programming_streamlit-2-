@@ -31,7 +31,7 @@ st.set_page_config(
 
 # Sidebar
 def set_background_color(color):
-    with open('.streamlit\config.toml','r') as f:
+    with open('.streamlit/config.toml','r') as f:
         data = load(f)
     if color == "White":
         data["theme"]["backgroundColor"] = "White"
