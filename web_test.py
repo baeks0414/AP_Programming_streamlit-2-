@@ -40,6 +40,7 @@ with st.sidebar:
 
 #    set_background_color(background)
 
+    background = Balck  # default 값
     if background != "White":
         option_menu_backcolor = "#fafafa"
     else:
