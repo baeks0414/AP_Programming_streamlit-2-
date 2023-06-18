@@ -30,26 +30,6 @@ st.set_page_config(
 
 
 # Sidebar
-'''
-def set_background_color(color):
-    with open('.streamlit/config.toml','r') as f:
-        data = load(f)
-    if color == "White":
-        data["theme"]["backgroundColor"] = "White"
-        data["theme"]["primaryColor"] = "#F63366"
-        data["theme"]["secondaryBackgroundColor"] = "#F0F2F6"
-        data["theme"]["textColor"] = "#262730"
-    elif color == "Black":
-        data["theme"]["backgroundColor"] = "Black"
-        data["theme"]["primaryColor"] = "#FF4B4B"
-        data["theme"]["secondaryBackgroundColor"] = "#262730"
-        data["theme"]["textColor"] = "#FAFAFA"
-
-    with open('.streamlit/config.toml','w') as f:
-        dump(data,f)
-    print(color,'함수')
-    return
-'''
 
 with st.sidebar:
     background = st.radio(
