@@ -41,7 +41,7 @@ with st.sidebar:
 #    set_background_color(background)
 
     background = "White"  # default 값
-    if background == "White":
+    if background != "White":
         option_menu_backcolor = "#000000"
     else:
         option_menu_backcolor = "#fafafa"
